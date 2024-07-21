@@ -1,0 +1,42 @@
+nav {
+  visibility: hidden;
+  background: var(--color-white);
+  width: max-content;
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  padding: 0.7rem 1.7rem;
+  z-index: 2;
+  position: fixed;
+  overflow: hidden;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2rem;
+  display: flex;
+  gap: 0.8rem;
+  border-radius: 3rem;
+}
+
+nav a {
+  padding: 0.9rem;
+  border-radius: 50%;
+  display: flex;
+  color: var(--color-light);
+  font-size: 1rem;
+}
+
+.nav-active {
+  background: var(--color-bg);
+}
+
+/* =============  MEDIA QUERIES(MEDIUM DEVICES) ========== */
+
+@media screen and (max-width: 1000px) {
+  nav {
+    visibility: visible;
+  }
+}
+/* =============  MEDIA QUERIES(SMALLER DEVICES) ========== */
+
+@media screen and (max-width: 600px) {
+}

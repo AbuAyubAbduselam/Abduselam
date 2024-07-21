@@ -1,0 +1,153 @@
+.container.about_container {
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 3%;
+  border-radius: 1rem;
+  background: url("../../assets/bg.png") no-repeat center center;
+  background-size: cover;
+}
+
+.about_me {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 2rem;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    var(--color-primary),
+    transparent
+  );
+  display: grid;
+  place-items: center;
+}
+
+.about_content {
+  padding: 40px;
+  color: #fff;
+}
+
+.about {
+  background: var(--color-bg);
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  transition: var(--transition);
+  margin-bottom: 2rem;
+}
+.about:hover {
+  cursor: default;
+}
+.about h2 {
+  color: var(--color-primary);
+}
+.about_content p {
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.about-me {
+  color: var(--color-primary);
+  padding-bottom: 2rem;
+  text-align: justify;
+}
+
+.about_me_image {
+  border-radius: 2rem;
+  overflow: hidden;
+
+  transition: var(--transition);
+}
+
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+b {
+  color: var(--color-primary);
+}
+
+.about_card:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
+}
+
+.about_icon {
+  color: var(--color-primary);
+  font-size: 1.4rem;
+}
+.about-icon {
+  margin-right: 0.3rem;
+  color: var(--color-primary);
+}
+
+.about_icon h5 {
+  font-size: 0.95rem;
+}
+
+.about_card small {
+  font-size: 0.7rem;
+  color: var(--color-light);
+}
+
+.about_content {
+  color: var(--color-light);
+}
+
+.talk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+/* =============  MEDIA QUERIES(MEDIUM DEVICES) ========== */
+
+@media screen and (max-width: 1024px) {
+  .container.about_container {
+    grid-template-columns: 1fr;
+
+    gap: 0;
+  }
+
+  .about-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .about_me {
+    width: 50%;
+    margin: 2rem auto 4rem;
+  }
+
+  .about_content p {
+    margin: 1rem 0 1.5rem;
+  }
+}
+/* =============  MEDIA QUERIES(SMALLER DEVICES) ========== */
+
+@media screen and (max-width: 600px) {
+  .about_me {
+    width: 65%;
+    margin: 0 auto 3rem;
+    text-align: justify;
+  }
+
+  .about-cards {
+    grid-template-columns: 100%;
+    gap: 2rem;
+  }
+
+  .about_content {
+    text-align: center;
+  }
+
+  .about_content p {
+    margin: 1.5rem 0;
+  }
+}

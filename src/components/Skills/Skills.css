@@ -1,0 +1,119 @@
+.experience-container {
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 5%;
+  border-radius: 1rem;
+  background: url("../../assets/bg.png") no-repeat center center;
+  background-size: cover;
+}
+
+.lang-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  padding: 40px;
+  border-radius: 1rem;
+  background-size: cover;
+}
+
+.lang {
+  background: var(--color-bg);
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5rem;
+  width: 5rem;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius: 2.5rem;
+  padding: 2rem;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.lang h2 {
+  color: var(--color-primary);
+}
+
+.all-lang {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill_item_image {
+  width: 350%;
+}
+
+.experience_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.experience_container > div {
+  background: var(--color-bg-variant);
+  padding: 2.4rem 5rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transform: var(--transition);
+}
+
+.experience_container > div:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
+}
+
+.experience_container > div h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--color-primary);
+}
+
+.lang-name {
+  margin-top: 0.5rem;
+  font-size: 17px;
+  color: var(--color-primary);
+}
+
+.experience_content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2rem;
+}
+
+.experience_details {
+  display: flex;
+  gap: 1rem;
+}
+
+.experience_details-icon {
+  margin-top: 6px;
+  color: var(--color-primary);
+}
+
+/* =============  MEDIA QUERIES(MEDIUM DEVICES) ========== */
+
+@media screen and (max-width: 1024px) {
+  .lang-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+/* =============  MEDIA QUERIES(SMALLER DEVICES) ========== */
+
+@media screen and (max-width: 600px) {
+  .lang-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .lang-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
