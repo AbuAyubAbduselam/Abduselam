@@ -4,6 +4,8 @@ import { BsInstagram } from "react-icons/bs";
 import { FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer id="footer">
       <a href="#" className="footer_logo">
@@ -42,7 +44,7 @@ const Footer = () => {
       </div>
 
       <div className="footer_copyright">
-        <small>&copy; Abduselam. All rights reserved.</small>
+        <small>&copy; {currentYear} Abduselam. All rights reserved.</small>
       </div>
     </footer>
   );

@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Sun from "./Sun.svg";
 import Moon from "./Moon.svg";
 import "./DarkMode.css";
 
-const DarkMode = ({ children }) => {
+const DarkMode = () => {
   const [isDarkMode, setIsDarkMode] = useState(() => {
     const savedTheme = localStorage.getItem("darkMode");
-    return savedTheme ? JSON.parse(savedTheme) : false;
+    return savedTheme ? JSON.parse(savedTheme) : true;
   });
 
   useEffect(() => {
