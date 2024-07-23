@@ -4,7 +4,6 @@ import Moon from "./Moon.svg";
 import "./DarkMode.css";
 
 const DarkMode = ({ children }) => {
-  // Initialize state from localStorage
   const [isDarkMode, setIsDarkMode] = useState(() => {
     const savedTheme = localStorage.getItem("darkMode");
     return savedTheme ? JSON.parse(savedTheme) : false;
@@ -12,19 +11,14 @@ const DarkMode = ({ children }) => {
 
   useEffect(() => {
     const body = document.querySelector("body");
-    const container = document.querySelector(".container");
+    console.log(body);
 
     if (isDarkMode) {
       body.setAttribute("data-theme", "dark");
-      container.classList.add("dark-container");
-      container.classList.remove("light-container");
     } else {
       body.setAttribute("data-theme", "light");
-      container.classList.add("light-container");
-      container.classList.remove("dark-container");
     }
 
-    // Save the theme to localStorage whenever it changes
     localStorage.setItem("darkMode", JSON.stringify(isDarkMode));
   }, [isDarkMode]);
 

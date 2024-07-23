@@ -18,14 +18,14 @@ const Footer = () => {
           <a href="#about">About</a>
         </li>
         <li>
-          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
         </li>
         <li>
-          <a href="#portfolio">Portfolio</a>
+          <a href="#projects">Projects</a>
         </li>
 
         <li>
-          <a href="#contact">Contact</a>{" "}
+          <a href="#contacts">Contact</a>{" "}
         </li>
       </ul>
 
@@ -36,7 +36,7 @@ const Footer = () => {
         <a href="https://instagram.com">
           <BsInstagram />
         </a>
-        <a href="https://twitter.com">
+        <a href="https://x.com/Abdu36899370662">
           <FaTwitter />
         </a>
       </div>

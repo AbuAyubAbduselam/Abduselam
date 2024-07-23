@@ -58,10 +58,10 @@ body {
   width: 100%;
   position: fixed;
   z-index: 10000;
-  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #ffffff;
   gap: 20px;
   overflow: hidden;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -99,7 +99,6 @@ body {
 .preload {
   width: 100%;
   min-height: 100vh;
-  background-color: white;
 }
 .toast-container {
   position: fixed;
