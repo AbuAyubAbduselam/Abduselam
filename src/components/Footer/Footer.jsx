@@ -36,13 +36,13 @@ const Footer = () => {
         <a href="https://instagram.com">
           <BsInstagram />
         </a>
-        <a href="https://x.com/Abdu36899370662">
+        <a href="https://twitter.com">
           <FaTwitter />
         </a>
       </div>
 
       <div className="footer_copyright">
-        <small>&copy; All rights are reserved</small>
+        <small>&copy; Abduselam. All rights reserved.</small>
       </div>
     </footer>
   );
