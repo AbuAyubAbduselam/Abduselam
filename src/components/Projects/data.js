@@ -1,6 +1,7 @@
 import dms from "../../assets/DMS.png";
 import jta from "../../assets/Job-tracking.png";
 import ecommerce from "../../assets/ecommerce.png";
+import ansar from "../../assets/ansar.png";
 
 const data = [
   {
@@ -8,7 +9,7 @@ const data = [
     image: dms,
     title: "Pharmacy Management System",
     github: "https://github.com/AbuAyubAbduselam/pharmacy-management-system",
-    demo: "https://pharmacy-management-system-amoy.onrender.com",
+    demo: "https://pharmacy-management-system-3e9p.onrender.com/",
   },
   {
     id: 2,
@@ -23,6 +24,13 @@ const data = [
     title: "Ecommerce Website",
     github: "https://github.com/AbuAyubAbduselam/Ecommerce-Website",
     demo: "https://ecommerce-website-abduselam.vercel.app/",
+  },
+  {
+    id: 4,
+    image: ansar,
+    title: "Ansar Medressa",
+    github: "https://github.com/AbuAyubAbduselam/ANSAR-MEDRESSA",
+    demo: "https://ansar-medressa.onrender.com/",
   },
 ];
 
